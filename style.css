@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(183 140 207);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.phone {
+  height: 600px;
+  width: 400px;
+  border: 1px solid white;
+  padding: 1px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.phoneImg {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 100%;
+  /* border-radius: 12px 12px 5px 5px; */
+}
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+nav ul {
+  /* padding: 1rem; */
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+nav li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+nav ul li p {
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+nav ul li:hover,
+nav ul li.active {
+  color: rgb(183 140 207);
+}
+
+nav ul li.active {
+  color: rgb(183 140 207);
+}
+.i2,
+.i3,
+.i4 {
+  display: none;
+}
+.phone .phoneImg .show {
+  display: block;
+}
