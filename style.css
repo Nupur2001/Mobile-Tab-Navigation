@@ -15,19 +15,21 @@ body {
   height: 600px;
   width: 400px;
   border: 1px solid white;
-  padding: 1px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
+  background-color: #fff;
 }
 .phoneImg {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: calc(100% - 60px);
-    width: 100%;
-  /* border-radius: 12px 12px 5px 5px; */
+  object-fit: cover;
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  display: none;
+  border-radius: 12px 12px 0 0;
 }
 nav {
   position: absolute;
@@ -69,11 +71,7 @@ nav ul li.active {
 nav ul li.active {
   color: rgb(183 140 207);
 }
-.i2,
-.i3,
-.i4 {
-  display: none;
-}
-.phone .phoneImg .show {
+
+.phoneImg.show {
   display: block;
 }
